@@ -1,0 +1,80 @@
+body {
+    background-color: #000; /* Use shorthand for black */
+    color: #ffffff; /* Default text color for better contrast */
+    font-family: 'Times New Roman', Times, serif; /* Consistent font-family across the body */
+    margin: 0; /* Remove default margin */
+}
+
+/* General border styles */
+.border {
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    margin-bottom: 10px;
+}
+
+/* Bold text */
+.bo {
+    font-weight: bold;
+}
+
+/* Flexbox for layout */
+.flex-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space elements evenly */
+}
+
+/* Margin for the first div */
+.div1 {
+    margin-right: 10px;
+}
+
+/* Styles for the second div */
+.div2 {
+    background-color: #1b1111;
+    padding: 10px 0; /* Use shorthand for padding */
+    margin: 0;
+}
+
+/* Centered content */
+.center {
+    margin: 0 auto; /* Centering the element */
+    width: 70%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Header styles */
+.header1, .header2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Additional margin for header2 */
+.header2 {
+    margin-left: 10px;
+}
+
+/* General text styles */
+.text {
+    font-size: 16px;
+    margin: 0 10px; /* Use shorthand for margins */
+}
+
+/* Centered footer text */
+.ftext {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .center {
+        width: 90%; /* Make it wider on smaller screens */
+    }
+    
+    .header1, .header2, .text, .ftext {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}

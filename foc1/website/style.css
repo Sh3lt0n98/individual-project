@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  background-color: rgb(7, 83, 83); /* Background color for the body */
+  margin: 0; /* Remove default body margin */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+
+.shadowbox {
+  width: auto; /* Adjust as needed */
+  height: auto; /* Adjust as needed */
+  margin: 0; /* Reset margin */
+  border: 5px solid #678888;
+  box-shadow: 16px -9px 5px #3f3a3a;
+  padding: 40px 25px;
+  background-color: rgb(130 141 23); /* Background color inside the shadow box */
+}
+
+img {
+  margin: auto; /* Center the image */
+  border-radius: 50%; /* Circular image */
+}
+
+.button {
+  background-color: #072e55; /* Blue background */
+  color: rgb(216, 32, 32); /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.button:hover {
+  background-color: #0a3c68; /* Darker blue on hover */
+}
+
+#name {
+  display: inline;
+  font-size: large;
+  font-weight: bold;
+}
+
+#contact {
+  display: inline;
+}
+
+.column {
+  float: left;
+  width: 35%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.centered-table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse; /* Optional: for better styling */
+}
+
+.centered-table th, .centered-table td {
+  border: 1px solid black; /* Optional: add borders */
+  padding: 8px; /* Optional: for spacing */
+  text-align: center; /* Center text */
+}
+
+.table-container {
+  margin-top: 20px; /* Space between content and tables */
+}
+
+/* Add this rule to change the background color outside the shadow box */
+.outer-container {
+  background-color: rgb(179, 21, 21); /* New background color outside the shadow box */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  position: absolute; /* Positioning for full coverage */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Behind the shadowbox */
+}

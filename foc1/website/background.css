@@ -1,0 +1,14 @@
+ a { 
+     color: red  
+ }
+ p{color:white;}
+ body{background-image: url("images/information.jpg"); text-align: center;} 
+ ul {
+  justify-content: center;
+  display: grid;
+}
+.bold-paragraph {
+            font-weight: bold;
+        }
+address{color:white}
+ul{color:white}

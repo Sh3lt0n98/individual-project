@@ -1,0 +1,18 @@
+
+document.getElementById("addNumbersLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    // Ask the user to enter two numbers
+    const num1 = parseFloat(prompt("Please enter the first number:"));
+    const num2 = parseFloat(prompt("Please enter the second number:"));
+    
+    // Check if the inputs are valid numbers
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter valid numbers.");
+    } else {
+        // Calculate the sum
+        const sum = num1 + num2;
+        // Display the result
+        alert("The sum of " + num1 + " and " + num2 + " is: " + sum);
+    }
+});
